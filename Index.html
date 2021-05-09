@@ -7,37 +7,45 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container-fluid">
-        <h1 class="text-center bg-info pt-5 pb-5">Bank Application</h1>
-        <div class="row m-0 p-0">
-            <div class="col-12 bg-secondary">
-                <table class="table table-bordered table-striped">
-                    <thead class="thead-light">
-                      <tr>
-                        <th scope="col" id="uID">Id</th>
-                        <th scope="col">Customer image</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">SurName</th>
-                        <th scope="col">Monthly Salary</th>
-                        <th scope="col">Active Loan</th>
-                        <th scope="col">Total monthly pay</th>
-                        <th scope="col">Details</th>
-                      </tr>
-                    </thead>
-                    <tbody id="data" style="background-color: white;">
-                    </tbody>
-                  </table>
-            </div>
-            
+    <nav class="navbar navbar-dark bg-danger mb-3">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                Profile Finder
+            </a>
         </div>
-    </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Bank App</h2>
+                <p>Search Profile</p>
+                <input type="text" id="search" class="form-control">
+                <p id="error"></p> 
+            </div>
+            <button class="btn btn-success" id="sea">Click</button>
+        </div>
+        <div id="profileContainer">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Amounts</th>
+              </tr>
+            </thead>
+            <tbody id="dataP">
+              <tr>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
 
-    
-  
+        </div>
+    </div>    
 
     <script src="./JS/app.js"></script>
   </body>
