@@ -10,22 +10,17 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-danger mb-3">
-        <div class="container">
-            <a href="" class="navbar-brand">
-                Profile Finder
-            </a>
-        </div>
-    </nav>
+
     <div class="container">
         <div class="card">
             <div class="card-body">
                 <h2>Bank App</h2>
                 <p>Search Profile</p>
-                <input type="text" id="search" class="form-control">
-                <p id="error"></p> 
+                <input type="text" id="search-input" class="form-control">
+                <p id="errorMsg"></p> 
             </div>
-            <button class="btn btn-success" id="sea">Click</button>
+            <button class="btn btn-success" id="search">Search</button>
+            <button class="btn btn-success mt-3" id="getAll">GetAllCustomers</button>
         </div>
         <div id="profileContainer">
           <table class="table table-bordered table-striped">
@@ -34,10 +29,11 @@
                 <th>Image</th>
                 <th>Name</th>
                 <th>Surname</th>
-                <th>Amounts</th>
+                <th>Salary</th>
+                <th>Banks</th>
               </tr>
             </thead>
-            <tbody id="dataP">
+            <tbody id="result-data">
               <tr>
                 <td></td>
               </tr>
@@ -47,6 +43,6 @@
         </div>
     </div>    
 
-    <script src="./JS/app.js"></script>
+    <script type="module" src="./JS/app.js"></script>
   </body>
 </html>
