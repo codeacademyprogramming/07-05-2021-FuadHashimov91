@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Bank App</h2>
+                <p>Search Profile</p>
+                <input type="text" id="search-input" class="form-control">
+                <p id="errorMsg"></p> 
+            </div>
+            <button class="btn btn-success" id="search">Search</button>
+            <button class="btn btn-success mt-3" id="getAll">GetAllCustomers</button>
+        </div>
+        <div id="profileContainer">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Salary</th>
+                <th>Banks</th>
+              </tr>
+            </thead>
+            <tbody id="result-data">
+              <tr>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+    </div>    
+
+    <script type="module" src="./JS/app.js"></script>
+  </body>
+</html>
