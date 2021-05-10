@@ -3,9 +3,10 @@ import {CreateHTML} from "./createHtml.js";
 
 
 document.querySelector("#getAll").addEventListener("click",getAll);
- 
-
 document.querySelector("#search").addEventListener("click",getUser);
+
+
+
 let table = document.getElementById("result-data");
 let errorMsg = document.getElementById("errorMsg");
 
@@ -37,24 +38,6 @@ async function getUser(){
         })
 }
 
-
-async function getAll(){
-
-
-    await fetch(xhr.url)
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            let d = data.find(f =>f.loans.)
-
-            console.log(d);
-        })
-         
-        
-
-    
-}
 
 
 
